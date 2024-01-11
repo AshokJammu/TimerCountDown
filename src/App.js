@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import Covid from "./Covid";
 import GoogleLogin from "./GoogleLogin";
 import Timer from './Timer'
+import Movie from './Movie'
 const App=()=>{
   
   return(
@@ -10,7 +11,8 @@ const App=()=>{
       <center>
         {/* <Covid /> */}
         {/* <GoogleLogin /> */}
-        <Timer />
+        {/* <Timer /> */}
+        <Movie />
       </center>
     </div>
   )
