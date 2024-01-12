@@ -4,6 +4,9 @@ import Covid from "./Covid";
 import GoogleLogin from "./GoogleLogin";
 import Timer from './Timer'
 import Movie from './Movie'
+import Emoji from "./emoji/Emoji";
+import Pagination from "./pagination/Pagination";
+import Display from "./pagination/Display";
 const App=()=>{
   
   return(
@@ -12,7 +15,9 @@ const App=()=>{
         {/* <Covid /> */}
         {/* <GoogleLogin /> */}
         {/* <Timer /> */}
-        <Movie />
+        {/* <Movie /> */}
+        {/* <Emoji /> */}
+        <Display  />
       </center>
     </div>
   )
