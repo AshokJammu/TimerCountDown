@@ -12,8 +12,12 @@ const Display = () => {
             setPerPage(response.data.slice(0,10));
         }).catch((err)=>{
             console.log(err,"error")
-        },[])
-    })
+        })
+    },[])
+
+const pageHandler=(pageNumber)=>{
+    setPerPage(data.slice((pageNumber*10)-10,pageNumber*10))
+}
   return (
     <div className='App'>
         {
@@ -26,11 +30,11 @@ const Display = () => {
                         </div>
                         
                     </div>
-                ))}
+                ))}  <br />
+                <Pagination data= {data} pageHandler={pageHandler}/>
             </div> : <p>Data not loaded</p>
         }
 
-        <Pagination data= {data}/>
     </div>
   )
 }
